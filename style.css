@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container geral */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 280px;
+  background-color: #272727;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  object-fit: cover;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.menu a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00bcd4;
+}
+
+.icones {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.icones a {
+  font-size: 1.5rem;
+  color: #00bcd4;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.icones a:hover {
+  transform: scale(1.2);
+}
+
+/* CONTEÚDO */
+.conteudo {
+  flex: 1;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.conteudo-scroll {
+  background-color: #2e2e2e;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.conteudo-scroll h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo-scroll p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
